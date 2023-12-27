@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Mon, 27 Nov 2023 10:26:11 +0000
+Source: prom
+Binary: prom
+Built-For-Profiles: noudeb
+Architecture: source all
+Version: 0.1-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: ServerR <server@srv.com>
+Changed-By: ServerR <server@srv.com>
+Description:
+ prom       - <insert up to 60 chars description>
+Changes:
+ prom (0.1-1) UNRELEASED; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ d8a15d5eef04dedbecc4199aab08be4e7dea35be 772 prom_0.1-1.dsc
+ efe9d658d53d2f1349b1ba2c73709bc5c758bb63 1316 prom_0.1.orig.tar.xz
+ 6ef7ed2145626135d6137d049f7d1b3ad2e4f2fd 2268 prom_0.1-1.debian.tar.xz
+ 4a0c50803abac427f1bd972338b9e0d6a47e6e81 3438 prom_0.1-1_all.deb
+ 7b0cf5e582628eb1cb811bdfd4ae39e7cb953c8d 5975 prom_0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ 5161e820324e4115f5dd1df6446593ab9b9232297869d649f557aa32bd9fc8d1 772 prom_0.1-1.dsc
+ 997e4f277b549168201fb990d54f8482910682f4c7b7f981478805fedccdabe3 1316 prom_0.1.orig.tar.xz
+ 3bbf6962b765ea4aa0a286f9a0ac2285deea4c560760cbc2b56f0d8e85cfe610 2268 prom_0.1-1.debian.tar.xz
+ 3f801e511b4f62c1f6e42e7caf3f6182c7ea886f31fcf5cd6437ce30fc205d96 3438 prom_0.1-1_all.deb
+ 16416003b514a7fa33fff4bc360e1b5055b05bff16b031f9a9cb0f94693a121e 5975 prom_0.1-1_amd64.buildinfo
+Files:
+ 143257c94e7d17e1dcbb26cbe9617710 772 unknown optional prom_0.1-1.dsc
+ 62a4db7aa301459cfa4df7a12381bd66 1316 unknown optional prom_0.1.orig.tar.xz
+ 519303417e92197e23f5d33d39ff227f 2268 unknown optional prom_0.1-1.debian.tar.xz
+ 4157cf6222d4db51af125fa73d1e068b 3438 unknown optional prom_0.1-1_all.deb
+ f2f8c64e2dd48fd1448c8c9835e07435 5975 unknown optional prom_0.1-1_amd64.buildinfo

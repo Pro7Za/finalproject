@@ -1,0 +1,89 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package easyrsa
+dpkg-buildpackage: info: source version 0.1-1
+dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source changed by LinuxX <linux@linux.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building easyrsa using existing ./easyrsa_0.1.orig.tar.xz
+dpkg-source: info: building easyrsa in easyrsa_0.1-1.debian.tar.xz
+dpkg-source: info: building easyrsa in easyrsa_0.1-1.dsc
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/easyrsa/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'easyrsa' in '../easyrsa_0.1-1_all.deb'.
+ dpkg-genbuildinfo -O../easyrsa_0.1-1_amd64.buildinfo
+ dpkg-genchanges -O../easyrsa_0.1-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian easyrsa_0.1-1_amd64.changes ...
+E: easyrsa: changelog-is-dh_make-template
+E: easyrsa: copyright-contains-dh_make-todo-boilerplate
+E: easyrsa source: debian-rules-is-dh_make-template
+E: easyrsa: description-is-dh_make-template
+E: easyrsa: dir-or-file-in-home home/linux/
+E: easyrsa: dir-or-file-in-home home/linux/easyrsa
+E: easyrsa: dir-or-file-in-home home/linux/openssl-easyrsa.cnf
+E: easyrsa: dir-or-file-in-home home/linux/pki/
+E: easyrsa: dir-or-file-in-home home/linux/pki/ca.crt
+E: easyrsa: dir-or-file-in-home home/linux/pki/certs_by_serial/
+E: easyrsa: dir-or-file-in-home home/linux/pki/index.txt
+E: easyrsa: dir-or-file-in-home home/linux/pki/index.txt.attr
+E: easyrsa: dir-or-file-in-home home/linux/pki/issued/
+E: easyrsa: dir-or-file-in-home home/linux/pki/openssl-easyrsa.cnf
+E: easyrsa: dir-or-file-in-home home/linux/pki/private/
+E: easyrsa: dir-or-file-in-home home/linux/pki/private/ca.key
+E: easyrsa: dir-or-file-in-home home/linux/pki/renewed/
+E: easyrsa: dir-or-file-in-home home/linux/pki/renewed/certs_by_serial/
+E: easyrsa: dir-or-file-in-home home/linux/pki/renewed/private_by_serial/
+E: easyrsa: dir-or-file-in-home home/linux/pki/renewed/reqs_by_serial/
+E: easyrsa: dir-or-file-in-home home/linux/pki/reqs/
+E: easyrsa: dir-or-file-in-home home/linux/pki/revoked/
+E: easyrsa: dir-or-file-in-home home/linux/pki/revoked/certs_by_serial/
+E: easyrsa: dir-or-file-in-home home/linux/pki/revoked/private_by_serial/
+E: easyrsa: dir-or-file-in-home home/linux/pki/revoked/reqs_by_serial/
+E: easyrsa: dir-or-file-in-home home/linux/pki/safessl-easyrsa.cnf
+E: easyrsa: dir-or-file-in-home home/linux/pki/serial
+E: easyrsa: dir-or-file-in-home home/linux/vars
+E: easyrsa: dir-or-file-in-home home/linux/vars.example
+E: easyrsa: dir-or-file-in-home home/linux/x509-types
+E: easyrsa: helper-templates-in-copyright
+E: easyrsa source: readme-source-is-dh_make-template
+E: easyrsa: section-is-dh_make-template
+W: easyrsa source: absolute-symbolic-link-target-in-source easyrsa -> /usr/share/easy-rsa/easyrsa
+W: easyrsa source: absolute-symbolic-link-target-in-source openssl-easyrsa.cnf -> /usr/share/easy-rsa/openssl-easyrsa.cnf
+W: easyrsa source: absolute-symbolic-link-target-in-source vars.example -> /usr/share/easy-rsa/vars.example
+W: easyrsa source: absolute-symbolic-link-target-in-source x509-types -> /usr/share/easy-rsa/x509-types
+W: easyrsa source: bad-homepage <insert the upstream URL, if relevant>
+W: easyrsa: bad-homepage <insert the upstream URL, if relevant>
+W: easyrsa: copyright-has-url-from-dh_make-boilerplate
+W: easyrsa: initial-upload-closes-no-bugs
+W: easyrsa: readme-debian-contains-debmake-template
+W: easyrsa source: space-in-std-shortname-in-dep5-copyright <special license> [debian/copyright:9]
+W: easyrsa source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: easyrsa: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: easyrsa: wrong-bug-number-in-closes #nnnn in the installed changelog (line 3)
+Finished running lintian.

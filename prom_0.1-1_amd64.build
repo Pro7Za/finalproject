@@ -1,0 +1,65 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: info: source package prom
+dpkg-buildpackage: info: source version 0.1-1
+dpkg-buildpackage: info: source distribution UNRELEASED
+dpkg-buildpackage: info: source changed by ServerR <server@srv.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building prom using existing ./prom_0.1.orig.tar.xz
+dpkg-source: info: building prom in prom_0.1-1.debian.tar.xz
+dpkg-source: info: building prom in prom_0.1-1.dsc
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/prom/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'prom' in '../prom_0.1-1_all.deb'.
+ dpkg-genbuildinfo -O../prom_0.1-1_amd64.buildinfo
+ dpkg-genchanges -O../prom_0.1-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian prom_0.1-1_amd64.changes ...
+E: prom: changelog-is-dh_make-template
+E: prom: copyright-contains-dh_make-todo-boilerplate
+E: prom source: debian-rules-is-dh_make-template
+E: prom: description-is-dh_make-template
+E: prom: dir-or-file-in-home home/server/
+E: prom: dir-or-file-in-home home/server/prometheus/
+E: prom: dir-or-file-in-home home/server/prometheus/alertmanager.yml
+E: prom: dir-or-file-in-home home/server/prometheus/alerts.yml
+E: prom: dir-or-file-in-home home/server/prometheus/prometheus.yml
+E: prom: dir-or-file-in-home home/server/prometheus/rules1.yml
+E: prom: helper-templates-in-copyright
+E: prom source: readme-source-is-dh_make-template
+E: prom: section-is-dh_make-template
+W: prom source: bad-homepage <insert the upstream URL, if relevant>
+W: prom: bad-homepage <insert the upstream URL, if relevant>
+W: prom: copyright-has-url-from-dh_make-boilerplate
+W: prom: initial-upload-closes-no-bugs
+W: prom: readme-debian-contains-debmake-template
+W: prom source: space-in-std-shortname-in-dep5-copyright <special license> [debian/copyright:9]
+W: prom source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: prom: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: prom: wrong-bug-number-in-closes #nnnn in the installed changelog (line 3)
+Finished running lintian.

@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Tue, 12 Dec 2023 15:23:28 +0000
+Source: opvpn
+Binary: opvpn
+Built-For-Profiles: noudeb
+Architecture: source all
+Version: 0.1-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: ServerR <server@srv.com>
+Changed-By: ServerR <server@srv.com>
+Description:
+ opvpn      - <insert up to 60 chars description>
+Changes:
+ opvpn (0.1-1) UNRELEASED; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 44efaa6634202e9c7d1b271fb47e4f89501b0321 784 opvpn_0.1-1.dsc
+ 054600adbcd8e7610bf03c41d47a3b80914f9eb4 11472 opvpn_0.1.orig.tar.xz
+ a19bf30067cfc65221fe4172fe8bed23403301d7 8704 opvpn_0.1-1.debian.tar.xz
+ 1535f6ac12aee98f26116583f15d107bf3738a4b 14606 opvpn_0.1-1_all.deb
+ 2ad0f327dce9bcab17fc18b01e1fb776b5ef2e20 5986 opvpn_0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ 4aa1f558f41676320a1d0b46d790f24e690c9391adae7391ff6fa2b52c32a2bb 784 opvpn_0.1-1.dsc
+ 6c09425cc3faf5fd9222762990308aca0e5cc83eac294db633619993d1ad86d8 11472 opvpn_0.1.orig.tar.xz
+ effd7a30a60871e98c5323cdbbf9353b910729ced8608d0963d7785970af57ce 8704 opvpn_0.1-1.debian.tar.xz
+ 86cfa26b6cc545b0a489839d3f92fcb0532818ec5ee989c6c5c4825a71832c18 14606 opvpn_0.1-1_all.deb
+ 7d0fe9d31c5ed20a0ec52b67bf5002c2da66370958b4a0195f6768a56666677a 5986 opvpn_0.1-1_amd64.buildinfo
+Files:
+ 291bb51ece43126ee8a48ced3d0ac393 784 unknown optional opvpn_0.1-1.dsc
+ 0917332b66881d2cf163e06b0257f7f2 11472 unknown optional opvpn_0.1.orig.tar.xz
+ 7b684b35d30889b2c0a642aad4d57585 8704 unknown optional opvpn_0.1-1.debian.tar.xz
+ d859097efaaa17f8ed2f0af33cef90f8 14606 unknown optional opvpn_0.1-1_all.deb
+ e4de01d5b76f68d521c554f8f7896eed 5986 unknown optional opvpn_0.1-1_amd64.buildinfo

@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Sun, 19 Nov 2023 14:02:38 +0000
+Source: easyrsa
+Binary: easyrsa
+Built-For-Profiles: noudeb
+Architecture: source all
+Version: 0.1-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: LinuxX <linux@linux.com>
+Changed-By: LinuxX <linux@linux.com>
+Description:
+ easyrsa    - <insert up to 60 chars description>
+Changes:
+ easyrsa (0.1-1) UNRELEASED; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ c28114757ec8e3f6b6ccf92c4601297c092d4b7c 799 easyrsa_0.1-1.dsc
+ 3bb0d818993409d244668e8f11e81073ffff398f 8432 easyrsa_0.1.orig.tar.xz
+ a301d2bf8156be0d0ff507f0c29b915566f45f7b 2272 easyrsa_0.1-1.debian.tar.xz
+ b51f2bb40063179a1294215dafb66a84c7bee82d 10760 easyrsa_0.1-1_all.deb
+ 667fba280d6c6f9a031c395fa6e20b4fc2d2635e 6002 easyrsa_0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ 23a7a5761719df8ad30109d9fc82706e04c1186ec829f7b96644536fa8992044 799 easyrsa_0.1-1.dsc
+ c5443b4d24a72778f56fa11ece650c3c22508eab8b1d73dfeb8ea68e1ccff62d 8432 easyrsa_0.1.orig.tar.xz
+ aeefdc374d5ab58754ff9b69a5f0ce94b6b4a4982a248e20749bdfcdd6d81641 2272 easyrsa_0.1-1.debian.tar.xz
+ 62d0cc836a8cba009d138b368e4866fe5385be9fc82f9f4ab16978e2c30196ea 10760 easyrsa_0.1-1_all.deb
+ fab8785e7360fc221bbcee2d707172a3a9f8c42a2fc54a19d6a65b663ab4710a 6002 easyrsa_0.1-1_amd64.buildinfo
+Files:
+ 24e69c785bdec336e69e49f58614b03e 799 unknown optional easyrsa_0.1-1.dsc
+ 19834af10b5d5512d8fc6a2341a9e2d3 8432 unknown optional easyrsa_0.1.orig.tar.xz
+ 18387282795cf81e83127042e038d836 2272 unknown optional easyrsa_0.1-1.debian.tar.xz
+ 183dc2591064aef7355f4da6a184b432 10760 unknown optional easyrsa_0.1-1_all.deb
+ 4d7eb724e8a2357c96d4e2f19a2206c4 6002 unknown optional easyrsa_0.1-1_amd64.buildinfo
