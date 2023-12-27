@@ -99,14 +99,6 @@ easyrsa_0.1-1_all.deb <br>
 easyrsa_0.1-1_amd64.build <br>
 easyrsa_0.1-1_amd64.buildinfo <br>
 easyrsa_0.1-1_amd64.changes <br>
-keys (deb-пакет): <br>
-keys_0.1.orig.tar.xz <br>
-keys_0.1-1.debian.tar.xz <br>
-keys_0.1-1.dsc <br>
-keys_0.1-1_all.deb <br>
-keys_0.1-1_amd64.build <br>
-keys_0.1-1_amd64.buildinfo <br>
-keys_0.1-1_amd64.changes <br>
 opvpn (deb-пакет openvpn): <br>
 opvpn_0.1-1.debian.tar.xz <br>
 opvpn_0.1-1.dsc <br>
