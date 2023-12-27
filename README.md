@@ -71,52 +71,52 @@ location /stub_status{
 
 **/*--- Oписание файлов и их назначение ---*/**
 finalProj.docx - в этом файле находятся еще дополнительные скриншоты  <br>
-Папка "Скриншоты":
-Скриншот с успешно изданным корневым сертификатом.png
-Скриншот с успешным подключением клиента к VPN-серверу№1.png
-Скриншот с успешным подключением клиента к VPN-серверу№2.png
-Скриншот с созданными алертами и несколько дней исторических данных метрик.png
-Пример алерта.png
-Папка "scripts":
-bckscript.sh - скрипт, который создает резервную копию папки /etc/; текстовый файл, в котором запишутся все установленные программы и бэкап БД.
-chmod.sh - скрипт для изменения прав доступа к файлам и каталогам
-firewall.sh - разрешения и запрет некоторых портов и соединений 
-iptables.sh - дополнительные настройки для создания VPN-сервера
-make_config.sh - дополнительные настройки для создания VPN-сервера
-prometheus.sh - установка prometheus и остальных сервисов
-rkhunter.sh - установка rkhunter (это сканер различных видов локальных (потенциальных) уязвимостей (бэкдоров, эксплоитов и руткитов) со своей регулярно обновляемой базой.)
-Файлы:
-2.ovpn - OpenVPN Config File для подключения VPN.
-backuprograms.txt - backup всех установленых в системе програм
-dumpsql.sql - backup БД.
-Архивы и deb-пакеты:
-clients_0.1.orig.tar.xz - архив клиетнской информации для /etc/openvpn/
-easyrsa (deb-пакет):
-easyrsa_0.1.orig.tar.xz
-easyrsa_0.1-1.debian.tar.xz
-easyrsa_0.1-1.dsc
-easyrsa_0.1-1_all.deb
-easyrsa_0.1-1_amd64.build
-easyrsa_0.1-1_amd64.buildinfo
-easyrsa_0.1-1_amd64.changes
-keys (deb-пакет):
-keys_0.1.orig.tar.xz
-keys_0.1-1.debian.tar.xz
-keys_0.1-1.dsc
-keys_0.1-1_all.deb
-keys_0.1-1_amd64.build
-keys_0.1-1_amd64.buildinfo
-keys_0.1-1_amd64.changes
-opvpn (deb-пакет openvpn):
-opvpn_0.1-1.debian.tar.xz
-opvpn_0.1-1.dsc
-opvpn_0.1-1_all.deb
-opvpn_0.1-1_amd64.build
-opvpn_0.1-1_amd64.buildinfo
-opvpn_0.1-1_amd64.changes
-prom (deb-пакет prometheus):
+Папка "Скриншоты": <br>
+Скриншот с успешно изданным корневым сертификатом.png <br>
+Скриншот с успешным подключением клиента к VPN-серверу№1.png <br>
+Скриншот с успешным подключением клиента к VPN-серверу№2.png <br>
+Скриншот с созданными алертами и несколько дней исторических данных метрик.png <br>
+Пример алерта.png <br>
+Папка "scripts": <br>
+bckscript.sh - скрипт, который создает резервную копию папки /etc/; текстовый файл, в котором запишутся все установленные программы и бэкап БД. <br>
+chmod.sh - скрипт для изменения прав доступа к файлам и каталогам <br>
+firewall.sh - разрешения и запрет некоторых портов и соединений  <br>
+iptables.sh - дополнительные настройки для создания VPN-сервера <br>
+make_config.sh - дополнительные настройки для создания VPN-сервера <br>
+prometheus.sh - установка prometheus и остальных сервисов <br>
+rkhunter.sh - установка rkhunter (это сканер различных видов локальных (потенциальных) уязвимостей (бэкдоров, эксплоитов и руткитов) со своей регулярно обновляемой базой.) <br>
+Файлы: <br>
+2.ovpn - OpenVPN Config File для подключения VPN. <br>
+backuprograms.txt - backup всех установленых в системе програм <br>
+dumpsql.sql - backup БД. <br>
+Архивы и deb-пакеты: <br>
+clients_0.1.orig.tar.xz - архив клиетнской информации для /etc/openvpn/ <br>
+easyrsa (deb-пакет): <br>
+easyrsa_0.1.orig.tar.xz <br>
+easyrsa_0.1-1.debian.tar.xz <br>
+easyrsa_0.1-1.dsc <br>
+easyrsa_0.1-1_all.deb <br>
+easyrsa_0.1-1_amd64.build <br>
+easyrsa_0.1-1_amd64.buildinfo <br>
+easyrsa_0.1-1_amd64.changes <br>
+keys (deb-пакет): <br>
+keys_0.1.orig.tar.xz <br>
+keys_0.1-1.debian.tar.xz <br>
+keys_0.1-1.dsc <br>
+keys_0.1-1_all.deb <br>
+keys_0.1-1_amd64.build <br>
+keys_0.1-1_amd64.buildinfo <br>
+keys_0.1-1_amd64.changes <br>
+opvpn (deb-пакет openvpn): <br>
+opvpn_0.1-1.debian.tar.xz <br>
+opvpn_0.1-1.dsc <br>
+opvpn_0.1-1_all.deb <br>
+opvpn_0.1-1_amd64.build <br>
+opvpn_0.1-1_amd64.buildinfo <br>
+opvpn_0.1-1_amd64.changes <br>
+prom (deb-пакет prometheus): <br>
 
-**Дополнительные комментарии:**
+**Дополнительные комментарии:** <br>
 БД - база данных.
 
 /*---    Руководство пользователя VPN    ---*/
