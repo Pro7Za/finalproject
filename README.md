@@ -36,18 +36,18 @@ Prometheus будем использовать для мониторинга и 
 
 После выполения этих этапов нужно перейти в: sudo vim /etc/nginx/sites-available/site-local.conf
 В этом файле нужно прописать:
-...
-server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
-	listen 8080 default_server;	
-}
-...
-location /stub_status{
-	stub_status;
-	allow 127.0.0.1;
-	deny all;
-}
+... <br>
+server { <br>
+	listen 80 default_server; <br>
+	listen [::]:80 default_server; <br>
+	listen 8080 default_server; <br>
+} <br>
+... <br>
+location /stub_status{ <br>
+	stub_status; <br>
+	allow 127.0.0.1; <br>
+	deny all; <br>
+} <br>
 Вносим изменения в iptables с помощю скрипта iptables.sh (sudo ./iptables.sh) расположеном в папке "scripts"
 
 **/*---  MySQL   ---*/**
